@@ -58,6 +58,7 @@
         "apiKey": {
             "title": "Your Persplexity API",
             "type": "string",
+            "description": "Your API",
             "editor": "textfield",
             "isSecret": true
         },
