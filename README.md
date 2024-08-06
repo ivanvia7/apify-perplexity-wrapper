@@ -104,6 +104,6 @@ The actor will return a response from the Perplexity API based on your configura
 - **Formatting**: Use the "Clean Answer" option to ensure the output is neatly formatted by replacing `\\n\\n` elements with whitespaces.
 
 ## Support
-If you encounter any issues or have any questions, please reach out to our support team at [support@apify.com](mailto:support@apify.com). We're here to help!
+If you encounter any issues or have any questions, please reach out to me via [Issues Tab](https://console.apify.com/actors/Wg7PLutWZ7fTrP64H/issues). I will be glad to help!
 
 Enjoy using the Perplexity Wrapper Actor!
