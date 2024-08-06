@@ -1,0 +1,74 @@
+{
+    "title": "PlaywrightCrawler Template",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startQuery": {
+            "title": "Your Query",
+            "type": "string",
+            "description": "Write your request to Perplexity",
+            "editor": "textarea",
+            "maxLength": 500
+        },
+        "systemInstruction": {
+            "title": "Your Instruction to the Bot on a system level",
+            "type": "string",
+            "description": "Perplexity allows you to preprogram the model with instructions at the system level, ensuring that you receive the results formatted as needed.",
+            "editor": "textarea",
+            "prefill": "Be precise and concise.",
+            "default": "Be precise and concise",
+            "maxLength": 500
+        },
+        "model": {
+            "title": "Bot Model",
+            "type": "string",
+            "description": "Select model you would like to use",
+            "editor": "select",
+            "default": "us",
+            "enum": [
+                "llama-3.1-sonar-small-128k-chat",
+                "llama-3.1-sonar-small-128k-online",
+                "llama-3.1-sonar-large-128k-chat",
+                "llama-3.1-sonar-large-128k-online",
+                "llama-3.1-8b-instruct",
+                "llama-3.1-70b-instruct"
+            ],
+            "enumTitles": [
+                "llama-3.1-sonar-small-128k-chat",
+                "llama-3.1-sonar-small-128k-online",
+                "llama-3.1-sonar-large-128k-chat",
+                "llama-3.1-sonar-large-128k-online",
+                "llama-3.1-8b-instruct",
+                "llama-3.1-70b-instruct"
+            ]
+        },
+        "max_tokens": {
+            "title": "Tokens",
+            "type": "integer",
+            "description": "Select the maximum number of tokens the platform should use. In text models like Perplexity, one token equals one word.",
+            "unit": "token"
+        },
+        "temperature": {
+            "title": "Temperature",
+            "type": "integer",
+            "description": "The amount of randomness in the response, valued between 0 inclusive and 2 exclusive. Higher values are more random, and lower values are more deterministic.",
+            "default": "0.2",
+            "maximum": "2",
+            "minimum": "0.1"
+        },
+        "apiKey": {
+            "title": "Your Persplexity API",
+            "type": "string",
+            "description": "Your API key to use with PRO model",
+            "editor": "textfield",
+            "isSecret": true
+        },
+        "cleanText": {
+            "title": "Clean Answer",
+            "type": "boolean",
+            "description": "\n\n elements will be replaced for whitespaces",
+            "default": true
+        }
+    },
+    "required": ["startQuery", "model", "apiKey", "systemInstruction"]
+}
