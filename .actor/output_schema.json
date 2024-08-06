@@ -1,6 +1,6 @@
 {
     "actorSpecification": 1,
-    "name": "Perplexity AI Wrapper",
+    "name": "ivanvia/perplexity-ai-wrapper",
     "title": "Perplexity AI Wrapper",
     "version": "1.0.0",
     "storages": {
