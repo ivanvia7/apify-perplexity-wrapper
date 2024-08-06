@@ -14,7 +14,7 @@
             "title": "Your Instruction to the Bot on a system level",
             "type": "string",
             "description": "Perplexity allows you to preprogram the model with instructions at the system level, ensuring that you receive the results formatted as needed.",
-            "editor": "textarea",
+            "editor": "textfield",
             "prefill": "Be precise and concise.",
             "default": "Be precise and concise",
             "maxLength": 500
@@ -24,7 +24,7 @@
             "type": "string",
             "description": "Select model you would like to use",
             "editor": "select",
-            "default": "us",
+            "default": "llama-3.1-sonar-small-128k-chat",
             "enum": [
                 "llama-3.1-sonar-small-128k-chat",
                 "llama-3.1-sonar-small-128k-online",
@@ -43,9 +43,9 @@
             ]
         },
         "max_tokens": {
-            "title": "Tokens",
+            "title": "Maximum Amount of Tokens",
             "type": "integer",
-            "description": "Select the maximum number of tokens the platform should use. In text models like Perplexity, one token equals one word.",
+            "description": "Select the maximum number of tokens the platform should use. In text models like Perplexity, one token equals one word in the answer.",
             "unit": "token"
         },
         "temperature": {
@@ -69,5 +69,5 @@
             "default": true
         }
     },
-    "required": ["startQuery", "model", "apiKey", "systemInstruction"]
+    "required": ["startQuery", "model", "apiKey", "systemInstruction", "model"]
 }
