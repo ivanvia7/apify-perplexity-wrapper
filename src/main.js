@@ -48,14 +48,14 @@ try {
     if (inputData.cleanText === "true") {
         console.log("Pushing Clean Message");
         await Dataset.pushData({
-            query: query,
+            YourQuery: query,
             answer: messageClean,
         });
     } else {
         console.log("Pushing Message");
 
         await Dataset.pushData({
-            query: query,
+            YourQuery: query,
             answer: message,
         });
     }
