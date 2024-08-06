@@ -13,7 +13,6 @@
         "systemInstruction": {
             "title": "Your Instruction to the Bot on a system level",
             "type": "string",
-            "editor": "textfield",
             "description": "Perplexity allows you to preprogram the model with instructions at the system level, ensuring that you receive the results formatted as needed.",
             "editor": "textarea",
             "prefill": "Be precise and concise.",
@@ -52,6 +51,7 @@
         "temperature": {
             "title": "Temperature",
             "type": "string",
+              "editor": "textfield",
             "description": "The amount of randomness in the response, valued between 0 inclusive and 2 exclusive. Higher values are more random, and lower values are more deterministic.",
             "default": "0.2"
         },
