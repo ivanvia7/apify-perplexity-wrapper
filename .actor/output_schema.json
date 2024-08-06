@@ -1,0 +1,32 @@
+{
+    "actorSpecification": 1,
+    "name": "Perplexity AI Wrapper",
+    "title": "Perplexity AI Wrapper",
+    "version": "1.0.0",
+    "storages": {
+        "dataset": {
+            "actorSpecification": 1,
+            "views": {
+                "overview": {
+                    "title": "Overview",
+                    "transformation": {
+                        "fields": ["YourQuery", "answer"]
+                    },
+                    "display": {
+                        "component": "table",
+                        "properties": {
+                            "YourQuery": {
+                                "label": "Your Query",
+                                "format": "text"
+                            },
+                            "answer": {
+                                "label": "Answer",
+                                "format": "text"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
