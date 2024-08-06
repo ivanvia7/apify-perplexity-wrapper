@@ -52,7 +52,7 @@
             "title": "Temperature",
             "type": "string",
             "description": "The amount of randomness in the response, valued between 0 inclusive and 2 exclusive. Higher values are more random, and lower values are more deterministic.",
-            "default": "0.2",
+            "default": "0.2"
         },
         "apiKey": {
             "title": "Your Persplexity API",
@@ -64,7 +64,7 @@
         "cleanText": {
             "title": "Clean Answer",
             "type": "boolean",
-            "description": "\n\n elements will be replaced for whitespaces",
+            "description": "\\n\\n elements will be replaced for whitespaces",
             "default": true
         }
     },
