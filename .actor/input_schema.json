@@ -68,5 +68,5 @@
             "default": true
         }
     },
-    "required": ["startQuery", "model", "apiKey", "systemInstruction", "model"]
+    "required": ["startQuery", "model", "apiKey", "systemInstruction"]
 }
