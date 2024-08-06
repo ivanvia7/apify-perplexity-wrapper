@@ -13,6 +13,7 @@
         "systemInstruction": {
             "title": "Your Instruction to the Bot on a system level",
             "type": "string",
+            "editor": "textfield",
             "description": "Perplexity allows you to preprogram the model with instructions at the system level, ensuring that you receive the results formatted as needed.",
             "editor": "textarea",
             "prefill": "Be precise and concise.",
