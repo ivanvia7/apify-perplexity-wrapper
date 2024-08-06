@@ -53,8 +53,6 @@
             "type": "string",
             "description": "The amount of randomness in the response, valued between 0 inclusive and 2 exclusive. Higher values are more random, and lower values are more deterministic.",
             "default": "0.2",
-            "maximum": "2",
-            "minimum": "0.1"
         },
         "apiKey": {
             "title": "Your Persplexity API",
